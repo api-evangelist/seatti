@@ -1,8 +1,23 @@
 aid: seatti
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/seatti.png
 name: Seatti
-description: 'Seatti is a company surfaced as a portfolio company of partech and added to the API Evangelist
-  network as a stub for enrichment. Sector: Applicative SaaS. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: 'Seatti is a hybrid-workplace management platform that helps organizations run desk, room,
+  and parking booking, track real office occupancy and utilization without hardware sensors, manage visitor
+  check-ins, and coordinate team presence. It integrates deeply with Microsoft Entra ID, Outlook, and Teams,
+  and serves 100+ companies across 30+ countries including OSRAM, Sartorius, and IKB. Surfaced as a portfolio
+  company of Partech (Applicative SaaS) and enriched in the API Evangelist network; no public developer API
+  surface was found at enrichment time.'
 url: https://raw.githubusercontent.com/api-evangelist/seatti/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +27,17 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Applicative Saas
+- Hybrid Work
+- Workplace Management
+- Desk Booking
+- Room Booking
+- Space Management
+- Occupancy Analytics
+- Microsoft Teams
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +45,24 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/seatti-domain-security.yml
 - type: Website
   url: https://www.seatti.co/
+- type: Pricing
+  url: https://www.seatti.co/preise
+- type: Blog
+  url: https://www.seatti.co/blog
+- type: SignUp
+  url: https://www.seatti.co/request-pages/live-demo
+- type: TermsOfService
+  url: https://www.seatti.co/legal/terms
+- type: PrivacyPolicy
+  url: https://www.seatti.co/legal/privacy-policy
+- type: TrustCenter
+  url: https://app.secfix.com/trust/seatti/
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
